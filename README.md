@@ -19,5 +19,11 @@ Our Network almost created
 
 Now we can also add Bastion Host so we can get access to private network from an external network
 1. Create Security group to our VPC for SSH Bastion access from Anywhere "0.0.0.0/0"
-2. Create Launch Configuration for AutoScaling Group and add a "SSH Bastion access" Security Group
-3. Create AutoScaling Group with Public Subnet A and B
+2. Generate New Key pair
+3. Create Launch Configuration for AutoScaling Group and add a "SSH Bastion access" Security Group
+4. Create AutoScaling Group with Public Subnet A and B
+5. Create Ec2 instances on Private and Database subnets
+6. Connect via SSH to Bastion Host
+7. Connect from Bastion Host to Private and Database Ec2 instances
+8. Move key to Private and Database Ec2 instances
+9. Test internet connection from EC2 instances
